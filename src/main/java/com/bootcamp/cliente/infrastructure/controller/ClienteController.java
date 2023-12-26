@@ -8,9 +8,9 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping(ClienteController.PRODUCTS)
+@RequestMapping(ClienteController.CLIENTE)
 public class ClienteController {
-    public static final String PRODUCTS = "/cliente";
+    public static final String CLIENTE = "/cliente";
     public static final String FINDALL = "/findAll";
     public static final String SAVE = "/save";
     public static final String FINDALLBY = "/findAllBy";

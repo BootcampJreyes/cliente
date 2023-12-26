@@ -1,3 +1,9 @@
+#spring:
+#  application:
+#    name: CLIENTE
+#  config:
+#    import: optional:configserver:http://localhost:8093/
+
 server:
   port: 8081
 spring:

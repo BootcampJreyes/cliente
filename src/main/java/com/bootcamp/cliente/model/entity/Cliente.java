@@ -25,8 +25,8 @@ public class Cliente {
     private String dni;
     private String nombre;
     private String apellido;
-    //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private String fechaNacimiento;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date fechaNacimiento;
     private String celular;
     private String email;
     private String ciudad;

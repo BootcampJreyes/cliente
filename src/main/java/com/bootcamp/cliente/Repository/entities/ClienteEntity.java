@@ -9,6 +9,7 @@ import lombok.Setter;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -23,8 +24,8 @@ public class ClienteEntity {
     private String dni;
     private String nombre;
     private String apellido;
-    //@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private String fechaNacimiento;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date fechaNacimiento;
     private String celular;
     private String email;
     private String ciudad;
