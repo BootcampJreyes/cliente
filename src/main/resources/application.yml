@@ -1,19 +1,5 @@
-#spring:
-#  application:
-#    name: CLIENTE
-#  config:
-#    import: optional:configserver:http://localhost:8093/
-
-server:
-  port: 8081
 spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/products
-  cloud:
-    config:
-      import-check:
-        enabled: false
-    enabled: false
-  import:
-    optional:  configserver:instead
+  application:
+    name: CLIENTE
+  config:
+    import: optional:configserver:http://localhost:8093/
